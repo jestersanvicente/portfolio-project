@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>www.jestersanvicente.com</title>
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <meta name="theme-color" content="#2575fc" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+ 
+  <header class="site-header" role="banner">
+    <nav class="site-nav" role="navigation" aria-label="Main navigation">
+      <div class="nav-inner">
+        <div class="brand">
+          <span class="logo">JSV</span>
+          <div class="brand-text">
+            <div class="name">Jester San Vicente</div>
+            <div class="tag">Personal Portfolio</div>
+          </div>
+        </div>
+
+        <ul class="nav-links" role="menubar" aria-label="Primary">
+          <li role="none"><a role="menuitem" href="#home">Home</a></li>
+          <li role="none"><a role="menuitem" href="#about">About</a></li>
+          <li role="none"><a role="menuitem" href="#activities">Activities</a></li>
+          <li role="none"><a role="menuitem" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+
+  <main>
+
+ 
+    <section id="home" class="hero" aria-label="Introduction">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Hi, I’m <span class="accent">Jester San Vicente</span></h1>
+          <p class="lead">
+            I design and build responsive websites and web apps. I focus on clean interfaces,
+            smooth interactions, and accessible code.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn primary" href="#activities">View My Activities</a>
+          </div>
+
+          <ul class="contacts" aria-hidden="true">
+            <li><strong>Email:</strong> jestersanvicente@gmail.com</li>
+            <li><strong>Facebook:</strong> Jester San Vicente</li>
+            <li><strong>Contact Number:</strong> 09123456789</li>
+          </ul>
+        </div>
+
+        <div class="hero-photo" aria-hidden="true">
+          <img src="images/myphoto.jpg" alt="">
+        </div>
+      </div>
+    </section>
+
+ 
+    <section id="about" class="section-white" aria-label="About me">
+      <div class="container text-left">
+        <h2>About Me</h2>
+        <p class="muted">
+          I am currently pursuing a <strong>BS Information Technology (BSIT)</strong>. My focus is on
+          front-end development and modern web practices — creating responsive layouts,
+          building interactive interfaces, and producing maintainable code.
+        </p>
+
+        <h3>Special Skills</h3>
+        <ul class="skills-list">
+          <li><strong>Programming Languages:</strong> Python, C++, JavaScript</li>
+          <li><strong>Web Development:</strong> HTML, CSS</li>
+          <li><strong>Database Management:</strong> MySQL</li>
+          <li><strong>Tools & Version Control:</strong> Git, GitHub</li>
+        </ul>
+
+        <h3>Learning Journey</h3>
+        <p class="muted">
+          Currently exploring different areas of programming and web development through
+          hands-on projects and personal practice. I enjoy experimenting with new ideas,
+          improving my code, and building small applications to enhance my skills.
+        </p>
+      </div>
+    </section>
+
+    <section id="activities" class="section-grey" aria-label="Activities">
+      <div class="container">
+        <h2 class="center">ACTIVITIES</h2>
+
+        <div class="activities-grid">
+          <article class="activity" tabindex="0">
+            <div class="activity-image">
+              <img src="images/itech.jpg" alt="" onclick="openLightbox(this)">
+            </div>
+            <div class="activity-info">
+              <h3>iTech 2023</h3>
+              <p>
+                Joined the annual <strong>iTech 2023</strong> event showcasing student innovations,
+                project exhibits, and technology demonstrations that promote creativity and
+                collaboration among developers.
+              </p>
+            </div>
+          </article>
+
+          <article class="activity" tabindex="0">
+            <div class="activity-image">
+              <img src="images/cisco.jpg" alt="" onclick="openLightbox(this)">
+            </div>
+            <div class="activity-info">
+              <h3>Cisco Workshop</h3>
+              <p>
+                Participated in the <strong>Cisco Networking Workshop</strong> to gain hands-on
+                experience in configuring networks and understanding real-world networking
+                principles used in IT environments.
+              </p>
+            </div>
+          </article>
+
+        
+          <article class="activity" tabindex="0">
+            <div class="activity-image">
+              <img src="images/ccs.jpg" alt="" onclick="openLightbox(this)">
+            </div>
+            <div class="activity-info">
+              <h3>CCS Week 2024</h3>
+              <p>
+                Engaged in <strong>CCS Week 2024</strong> as a participant, joining various departmental
+                activities that fostered collaboration and connection within the IT student community.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-label="Image preview">
+      <button class="close-btn" aria-label="Close image">&times;</button>
+      <img id="lightbox-img" src="" alt="">
+    </div>
+
+
+    <section id="contact" class="section-white" aria-label="Contact">
+      <div class="container form-wrap">
+        <h2 class="center">Contact Me</h2>
+        <form id="contactForm" class="contact-form" aria-label="Contact form">
+          <input id="name" type="text" name="name" placeholder="Your name" required>
+          <input id="email" type="email" name="email" placeholder="Your email" required>
+          <textarea id="message" name="message" placeholder="Your message" required></textarea>
+          <div class="form-actions">
+            <button type="submit" class="btn primary">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-brand">Jester San Vicente</div>
+      <div class="footer-note">&copy; 2025 All rights reserved.</div>
+    </div>
+  </footer>
+  
+</body>
+</html>
